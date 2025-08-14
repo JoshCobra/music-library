@@ -26,15 +26,15 @@ header nav a:hover {
 	color: #111;
 }
 
-/* Song styles (Apple Music inspired) */
+/* Song styles */
 .songContainer {
+    margin: 10px 20px;
 	display: flex;
 	align-items: center;
 	padding: 18px 32px;
 	background: #fafafa;
 	border-radius: 12px;
 	box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-	margin: 12px 0;
 	transition: background 0.2s;
 }
 .songContainer:hover {
