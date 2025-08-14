@@ -14,8 +14,11 @@ class Song extends Component {
         return(
             <div className="songContainer">
                 <img src=""/>
-                <h4 className="songTitle"> {this.state.songTitle} </h4>
-                <p className="songArtist"> {this.state.songArtist} </p>
+                <div className="songAttributes">
+                    <h4 className="songTitle"> {this.state.songTitle} </h4>
+                    <p className="songArtist"> {this.state.songArtist} </p>
+                </div>
+                <p className="songInfoDots">...</p>
             </div>
         )
     }
