@@ -1,22 +1,16 @@
 import { Component } from "react";
 
-class Song extends Component {
-    constructor(props) {
-        super(props)
 
-        this.state = {
-            songTitle: "Romance",
-            songArtist: "Hiroshi Suzuki",
-        }
-    }
-    
+class Song extends Component {
     render() {
+        const { songTitle, songArtist } = this.props;
+        
         return(
             <div className="songContainer">
                 <img src=""/>
                 <div className="songAttributes">
-                    <h4 className="songTitle"> {this.state.songTitle} </h4>
-                    <p className="songArtist"> {this.state.songArtist} </p>
+                    <h4 className="songTitle">{songTitle}</h4>
+                    <p className="songArtist">{songArtist}</p>
                 </div>
                 <p className="songInfoDots">...</p>
             </div>

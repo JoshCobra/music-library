@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Header/> 
-      <Song/>
+      <Song songTitle= "Romance" songArtist="Hiroshi Suzuki"/>
+      <Song songTitle= "Siempre Hay Esperanza" songArtist= "Sade"/>
+      <Song songTitle= "London Beach" songArtist= "Veeko Morlet"/>
     </div>
   );
 }
