@@ -3,7 +3,7 @@ import { Component } from "react";
 class Header extends Component {
 
     render() {
-        return( 
+        return (
             <header>
                 <h1 className="mainTitle">Music Library </h1>
                 <nav>
