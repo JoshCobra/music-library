@@ -8,7 +8,7 @@ const Song = (props) => {
                 <h4 className="songTitle">{songTitle}</h4>
                 <p className="songArtist">{songArtist}</p>
             </div>
-            <button onClick={props.onButtonClick}>{props.buttonText}</button>
+            {props.buttonText && <button onClick={props.onButtonClick}>{props.buttonText}</button>}
             <p className="songInfoDots">...</p>
         </div>
     )
