@@ -26,6 +26,10 @@ const App = () => {
   const [searchResults, setSearchResults] = useState(songsData);
   const [library, setLibrary] = useState([]);
 
+  const addSongToLibrary = (song) => {
+    setLibrary([...library, song]);
+  }
+
   return (
     <div className="App">
       <Header />
