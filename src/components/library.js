@@ -1,11 +1,20 @@
 import Song from "./song"
-import React from "react"
 
 const Library = (props) => {
     return (
-        <section>
-        <h2 className="libraryTitle">Your Library</h2>
-
+        <section className="library">
+            <h2 className="libraryTitle">Your Library</h2>
+            {props.library.map((song, index) => (
+                <Song
+                    key={index}
+                    songTitle={song.songTitle}
+                    songArtist={song.songArtist}
+                    imgSrc={song.imgSrc}
+                />
+            ))}
+        </section>
     )
-    
+
 }
+
+export default Library;
