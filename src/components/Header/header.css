@@ -1,0 +1,27 @@
+
+/* Header styles */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 32px 12px 32px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.mainTitle {
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0;
+}
+header nav a {
+	margin-left: 24px;
+	text-decoration: none;
+	color: #888;
+	font-weight: 500;
+	font-size: 1rem;
+	transition: color 0.2s;
+}
+header nav a:hover {
+	color: #111;
+}

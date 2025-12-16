@@ -1,4 +1,5 @@
-import Song from "./song";
+import Song from "../Song/song";
+import './searchResults.css';
 
 const SearchResults = (props) => {
     return (

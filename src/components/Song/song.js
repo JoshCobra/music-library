@@ -1,3 +1,5 @@
+import './song.css';
+
 const Song = (props) => {
     const { songTitle, songArtist } = props;
 
@@ -8,8 +10,10 @@ const Song = (props) => {
                 <h4 className="songTitle">{songTitle}</h4>
                 <p className="songArtist">{songArtist}</p>
             </div>
-            {props.buttonText && <button onClick={props.onButtonClick}>{props.buttonText}</button>}
-            <p className="songInfoDots">...</p>
+            <div className="songActions">
+                {props.buttonText && <button onClick={props.onButtonClick}>{props.buttonText}</button>}
+                <p className="songInfoDots">...</p>
+            </div>
         </div>
     )
 }
